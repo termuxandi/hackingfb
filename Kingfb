@@ -1,0 +1,115 @@
+#usr/bin/bash
+clear
+bi='\33[34;1m' #biru
+ij='\33[32;1m' #ijo
+pr='\33[35;1m' #purple
+cy='\33[36;1m' #cyan
+me='\33[31;1m' #merah
+pu='\33[37;1m' #putih
+ku='\33[33;1m' #kuning
+
+figlet -f slant "Termux.id" | lolcat
+echo $pu"▂ ▃ ▄ ▅ ▆ ▇ █ 4G "$ku " jaringan stabilkan "
+sleep 1
+echo
+echo
+echo $me"================================================ "
+sleep 1
+echo $me"❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏❖"
+sleep 1
+echo $pr"   ┈┏━╮╭━┓┈╭━━━━━━."  $cy  "[1] TARGET FB 1"
+sleep 1
+echo $pr"┈┈┃┏┗┛┓┃╭┫ⓞⓘⓝⓚ     "  $cy  "[2] TARGET FB 2"
+sleep 1
+echo $pr"┈┈╰┓▋▋┏╯╯╰━━━━━━   "  $cy  "[3] TARGET FB 3 "
+sleep 1
+echo $pr"┈╭━┻╮╲┗━━━━╮╭╮┈    "  $cy  "[4] TARGET FB 4"
+sleep 1
+echo $pr"┈┃▎▎┃╲╲╲╲╲╲┣━╯┈    "  $cy  "[5] TARGET FB 5"
+sleep 1
+echo $pr"┈╰━┳┻▅╯╲╲╲╲┃┈┈┈    "  $cy  "[6] TARGET WIFI 6"
+sleep 1
+echo $pr"┈┈┈╰━┳┓┏┳┓┏╯┈┈┈    "  $cy  "[7] INSTALL BAHAN"
+sleep 1
+echo $pr"┈┈┈┈┈┗┻┛┗┻┛┈┈┈┈    "  $cy  "[8] LINK YOUTUBE"
+sleep 1
+echo $me"❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏❖❏❖❏❏❖❏❖❏❖❏❖❏"
+sleep 1
+echo $me"================================================"
+echo $ku"░P░A░N░D░O░R░A░ |"
+echo $ku"➷➷➷➷➷✓ :▄︻┳═一 "
+      read -p "|___--->✓ : pilih : " pil :
+
+#batas gan
+if [ $pil = 1 ]
+then
+git clone https://github.com/SansBae/dark-lite
+ls
+cd dark-lite
+ls
+python2 lite.py
+fi
+#batas gan
+if [ $pil = 2 ]
+then
+git clone https://github.com/haniefaktivisme/loginck
+cd loginck
+python2 loginck.py
+fi
+#batas gan
+if [ $pil = 3 ]
+then
+git clone https://github.com/V4N654T/fb-hacker
+ls
+cd fb-hacker
+ls
+python2 fb.py
+fi
+#batas gan
+if [ $pil = 4 ]
+then
+git clone https://github.com/botolmehedi/bint
+ls
+cd bint
+ls
+python2 bint.py
+fi
+#batas gan
+if [ $pil = 5 ]
+then
+git clone https://github.com/darkcurut08/darkcurut08
+ls
+cd darkcurut08
+ls
+sh Moreno77.sh
+fi
+#batas gan
+if [ $pil = 6 ]
+then
+git clone https://github.com/esc0rtd3w/wifi-hacker
+ls
+cd wifi-hacker
+ls
+./wifi-hacker.sh
+fi
+#batas gan
+if [ $pil = 7 ]
+then
+pkg update && pkg upgrade
+pkg install python
+pkg install python2
+pkg install git
+pkg install cowsay
+pkg install php
+pkg install clang
+pkg install figlet
+pip install lolcat
+pip install requests
+pip install mechanize
+pip install bs4
+fi
+#batas gan
+if [ $pil = 8 ]
+then
+echo "Kalau ingin lihat lebih lengkap kalian copy link youtube ini https://https://www.youtube.com/channel/UCYyLRV9WpJXabXqrRjcgOeQ " | lolcat
+fi
